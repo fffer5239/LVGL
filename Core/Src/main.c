@@ -18,12 +18,14 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 #include "fsmc.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "stdio.h"
 #include "lcd.h"
 #include "key_led.h"
 #include "key.h"
@@ -210,6 +212,7 @@ void rtp_test(void)
 /* 10个触控点的颜色（电容触摸屏用） */
 static const uint16_t POINT_COLOR_TBL[10] = {RED, GREEN, BLUE, BROWN, YELLOW,
                                              MAGENTA, CYAN, LIGHTBLUE, BRRED, GRAY};
+uint32_t timer_cnt = 0;
 /* USER CODE END 0 */
 
 /**
@@ -243,7 +246,9 @@ int main(void)
   MX_GPIO_Init();
   MX_FSMC_Init();
   MX_USART1_UART_Init();
+  MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
+
   printf("Hello World!\n");
   DWT_Init(); // 初始化DWT
 //   Key_Init();
@@ -262,14 +267,14 @@ int main(void)
     // {
     //     lcd_show_string(30, 110, 200, 16, 16, "Press KEY0 to Adjust", RED);
     // }
-    delay_ms(1500);
-    load_draw_dialog();
+    // delay_ms(1500);
+    // load_draw_dialog();
     
-    if ((tp_dev.touchtype & 0x80) == 0)
-    {
-        /* 电阻屏测试 */
-        rtp_test();
-    }
+    // if ((tp_dev.touchtype & 0x80) == 0)
+    // {
+    //     /* 电阻屏测试 */
+    //     rtp_test();
+    // }
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -281,6 +286,12 @@ int main(void)
     /* USER CODE BEGIN 3 */
     // HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
     // HAL_Delay(1000);
+    if (timer_cnt % 1000 == 0)
+    {
+        // printf("timer_cnt = %d\r\n", timer_cnt);
+       timer_cnt = 0;
+       printf("timer_int\r\n");
+    }
 	}
   /* USER CODE END 3 */
 }

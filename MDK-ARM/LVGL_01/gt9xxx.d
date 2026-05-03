@@ -32,6 +32,8 @@ lvgl_01\gt9xxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h
 lvgl_01\gt9xxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h
 lvgl_01\gt9xxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 lvgl_01\gt9xxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+lvgl_01\gt9xxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+lvgl_01\gt9xxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 lvgl_01\gt9xxx.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 lvgl_01\gt9xxx.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdlib.h
 lvgl_01\gt9xxx.o: ../BSP/LCD/Inc/delay.h

@@ -30,10 +30,14 @@ lvgl_01\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_sram.h
 lvgl_01\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_fsmc.h
 lvgl_01\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 lvgl_01\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+lvgl_01\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+lvgl_01\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 lvgl_01\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+lvgl_01\main.o: ../Core/Inc/tim.h
 lvgl_01\main.o: ../Core/Inc/usart.h
 lvgl_01\main.o: ../Core/Inc/gpio.h
 lvgl_01\main.o: ../Core/Inc/fsmc.h
+lvgl_01\main.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdio.h
 lvgl_01\main.o: ../BSP/LCD/Inc/lcd.h
 lvgl_01\main.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdlib.h
 lvgl_01\main.o: ../BSP/LCD/Inc/delay.h
