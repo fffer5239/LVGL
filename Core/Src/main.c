@@ -30,6 +30,11 @@
 #include "key_led.h"
 #include "key.h"
 #include "touch.h"
+//LVGL
+#include "lvgl.h"
+#include "lv_port_disp.h"
+#include "lv_port_indev.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,158 +66,20 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-/**
- * @brief   清空屏幕并在右上角显示"RST"
- * @param   无
- * @retval  无
- */
-static void load_draw_dialog(void)
-{
-    lcd_clear(WHITE);                                                /* 清屏 */
-    lcd_show_string(lcddev.width - 24, 0, 200, 16, 16, "RST", BLUE); /* 显示清屏区域 */
-}
-
-/**
- * @brief   画粗线
- * @param   x1: 起点X坐标
- * @param   y1: 起点Y坐标
- * @param   x2: 终点X坐标
- * @param   y2: 终点Y坐标
- * @param   size: 线条粗细程度
- * @param   color: 线的颜色
- * @retval  无
- */
-static void lcd_draw_bline(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint8_t size, uint16_t color)
-{
-    uint16_t t;
-    int xerr = 0;
-    int yerr = 0;
-    int delta_x;
-    int delta_y;
-    int distance;
-    int incx, incy, row, col;
+static void btn_event_handler(lv_event_t * e){
+    static bool led_flg = false;
+    HAL_GPIO_TogglePin(GPIOA, LED3_Pin);
+    led_flg = !led_flg;
     
-    if ((x1 < size) || (x2 < size) || (y1 < size) || (y2 < size))
-    {
-        return;
-    }
+    lv_obj_t * btn = lv_event_get_target(e);
+    lv_obj_t * label = lv_obj_get_child(btn, 0);
     
-    delta_x = x2 - x1;                          /* 计算坐标增量 */
-    delta_y = y2 - y1;
-    row = x1;
-    col = y1;
-    if (delta_x > 0)
-    {
-        incx = 1;                               /* 设置单步方向 */
-    }
-    else if (delta_x == 0)
-    {
-        incx = 0;                               /* 垂直线 */
-    }
-    else
-    {
-        incx = -1;
-        delta_x = -delta_x;
-    }
-    
-    if (delta_y > 0)
-    {
-        incy = 1;
-    }
-    else if (delta_y == 0)
-    {
-        incy = 0;                               /* 水平线 */
-    }
-    else
-    {
-        incy = -1;
-        delta_y = -delta_y;
-    }
-    
-    if (delta_x > delta_y)
-    {
-        distance = delta_x;                     /* 选取基本增量坐标轴 */
-    }
-    else
-    {
-        distance = delta_y;
-    }
-    
-    for (t=0; t<=(distance + 1); t++)           /* 画线输出 */
-    {
-        lcd_fill_circle(row, col, size, color); /* 画点 */
-        xerr += delta_x;
-        yerr += delta_y;
-        
-        if (xerr > distance)
-        {
-            xerr -= distance;
-            row += incx;
-        }
-        
-        if (yerr > distance)
-        {
-            yerr -= distance;
-            col += incy;
-        }
+    if(led_flg){
+        lv_label_set_text(label, "Turn OFF LED2");
+    }else{
+        lv_label_set_text(label, "Turn ON LED2");
     }
 }
-
-/**
- * @brief   电阻触摸屏测试
- * @param   无
- * @retval  无
- */
-void rtp_test(void)
-{
-    uint8_t key;
-    uint8_t i = 0;
-    
-    while (1)
-    {
-        key = key_scan(0);
-        tp_dev.scan(0);
-        
-        if (tp_dev.sta & TP_PRES_DOWN)                                          /* 触摸屏被按下 */
-        {
-            if ((tp_dev.x[0] < lcddev.width) && (tp_dev.y[0] < lcddev.height))
-            {
-                if ((tp_dev.x[0] > (lcddev.width - 24)) && (tp_dev.y[0] < 16))
-                {
-                    load_draw_dialog();                                         /* 清除 */
-                }
-                else
-                {
-                    tp_draw_big_point(tp_dev.x[0], tp_dev.y[0], RED);           /* 画点 */
-                }
-            }
-        }
-        else
-        {
-            delay_ms(10);                                                       /* 没有按键按下的时候 */
-        }
-        
-        if (key == KEY0_PRES)                                                   /* KEY0按下，则执行校准程序 */
-        {
-            printf("KEY0_PRES\n");
-            tp_adjust();                                                        /* 屏幕校准 */
-            tp_save_adjust_data();
-            load_draw_dialog();
-        }
-        
-        i++;
-        if ((i % 20) == 0)
-        {
-            // LED2_TOGGLE();
-             HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
-        }
-    }
-}
-
-/* 10个触控点的颜色（电容触摸屏用） */
-static const uint16_t POINT_COLOR_TBL[10] = {RED, GREEN, BLUE, BROWN, YELLOW,
-                                             MAGENTA, CYAN, LIGHTBLUE, BRRED, GRAY};
-uint32_t timer_cnt = 0;
 /* USER CODE END 0 */
 
 /**
@@ -251,30 +118,22 @@ int main(void)
 
   printf("Hello World!\n");
   DWT_Init(); // 初始化DWT
-//   Key_Init();
-// //  Led_Init();
-  lcd_init();
   key_init(); 
 
-    tp_dev.init();                      /* 初始化触摸屏 */
+    lv_init();
+    lv_port_disp_init();
+    lv_port_indev_init();
 
-    lcd_show_string(30, 50, 200, 16, 16, "STM32", RED);
-    lcd_show_string(30, 70, 200, 16, 16, "TOUCH TEST", RED);
-    lcd_show_string(30, 90, 200, 16, 16, "ATOM@ALIENTEK", RED);
-
-    /* 电阻屏显示触摸校准提示 */
-    // if ((tp_dev.touchtype & 0x80) == 0)
-    // {
-    //     lcd_show_string(30, 110, 200, 16, 16, "Press KEY0 to Adjust", RED);
-    // }
-    // delay_ms(1500);
-    // load_draw_dialog();
+    lv_obj_t* btn_led2_obj = lv_btn_create(lv_scr_act());
     
-    // if ((tp_dev.touchtype & 0x80) == 0)
-    // {
-    //     /* 电阻屏测试 */
-    //     rtp_test();
-    // }
+    lv_obj_add_event_cb(btn_led2_obj, btn_event_handler, LV_EVENT_CLICKED, NULL);
+    lv_obj_set_size(btn_led2_obj,160,30);
+    lv_obj_align(btn_led2_obj,LV_ALIGN_CENTER,0,0);
+    
+    lv_obj_t *label_obj = lv_label_create(btn_led2_obj);
+    lv_label_set_text(label_obj,"Turn on Led2");
+    lv_obj_center(label_obj);
+  
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -284,15 +143,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    // HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
-    // HAL_Delay(1000);
-    if (timer_cnt % 1000 == 0)
-    {
-        // printf("timer_cnt = %d\r\n", timer_cnt);
-       timer_cnt = 0;
-       printf("timer_int\r\n");
-    }
-	}
+       
+        lv_timer_handler(); 
+        delay_ms(5);
+        Led2_Blink_NonBlocking(500);  // 每500ms翻转一次LED2
+  }
   /* USER CODE END 3 */
 }
 

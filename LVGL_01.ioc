@@ -2,10 +2,10 @@
 CAD.formats=
 CAD.pinconfig=
 CAD.provider=
-FSMC.AddressSetupTime1=2
+FSMC.AddressSetupTime1=15
 FSMC.BusTurnAroundDuration1=0
-FSMC.DataSetupTime1=5
-FSMC.ExtendedAddressSetupTime1=2
+FSMC.DataSetupTime1=60
+FSMC.ExtendedAddressSetupTime1=9
 FSMC.ExtendedBusTurnAroundDuration1=0
 FSMC.ExtendedDataSetupTime1=5
 FSMC.ExtendedMode1=FSMC_EXTENDED_MODE_ENABLE

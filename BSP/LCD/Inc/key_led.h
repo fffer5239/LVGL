@@ -29,4 +29,6 @@ void Led_Off(LED_ID led_id);
 /* 控制 LED 翻转函数 */
 void Led_Toggle(LED_ID led_id);
 
+void Led2_Blink_NonBlocking(uint32_t interval_ms);
+
 #endif

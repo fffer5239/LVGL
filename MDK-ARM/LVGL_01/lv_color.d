@@ -1,0 +1,13 @@
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_color.c
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_color.h
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\../lv_conf_internal.h
+lvgl_01\lv_color.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdint.h
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\../lv_conf_kconfig.h
+lvgl_01\lv_color.o: ../Mid/LVGL/LVGL_SRC/LVGL/examples/porting/../../lv_conf.h
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_assert.h
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_log.h
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_types.h
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_mem.h
+lvgl_01\lv_color.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stddef.h
+lvgl_01\lv_color.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\string.h
+lvgl_01\lv_color.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_math.h

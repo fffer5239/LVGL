@@ -1,0 +1,16 @@
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\gifdec.c
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\gifdec.h
+lvgl_01\gifdec.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdint.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/lv_fs.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/../lv_conf_internal.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/../lv_conf_kconfig.h
+lvgl_01\gifdec.o: ../Mid/LVGL/LVGL_SRC/LVGL/examples/porting/../../lv_conf.h
+lvgl_01\gifdec.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdbool.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/lv_log.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/lv_types.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/lv_mem.h
+lvgl_01\gifdec.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stddef.h
+lvgl_01\gifdec.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\string.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/lv_color.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/lv_assert.h
+lvgl_01\gifdec.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\extra\libs\gif\../../../misc/lv_math.h

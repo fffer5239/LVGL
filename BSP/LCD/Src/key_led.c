@@ -84,3 +84,25 @@ void Led_Toggle(LED_ID led_id)
     else if(led_id == LED2)
         HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
 }
+
+
+// 静态变量用于存储上次翻转LED的时间戳
+static uint32_t led2_last_tick = 0;
+
+/* 非阻塞定时翻转 LED2 函数
+ * interval_ms: 翻转间隔时间（毫秒）
+ * 调用方式：在主循环中周期性调用此函数
+ */
+void Led2_Blink_NonBlocking(uint32_t interval_ms)
+{
+    uint32_t current_tick = HAL_GetTick();
+    
+    // 检查是否达到翻转时间
+    if((current_tick - led2_last_tick) >= interval_ms)
+    {
+        // 翻转 LED2
+        HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
+        // 更新上次翻转时间
+        led2_last_tick = current_tick;
+    }
+}

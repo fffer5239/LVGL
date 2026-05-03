@@ -1,0 +1,10 @@
+lvgl_01\lv_printf.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_printf.c
+lvgl_01\lv_printf.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_printf.h
+lvgl_01\lv_printf.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\../lv_conf_internal.h
+lvgl_01\lv_printf.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdint.h
+lvgl_01\lv_printf.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\../lv_conf_kconfig.h
+lvgl_01\lv_printf.o: ../Mid/LVGL/LVGL_SRC/LVGL/examples/porting/../../lv_conf.h
+lvgl_01\lv_printf.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdarg.h
+lvgl_01\lv_printf.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stddef.h
+lvgl_01\lv_printf.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\misc\lv_types.h
+lvgl_01\lv_printf.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdbool.h

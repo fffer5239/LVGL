@@ -1,0 +1,16 @@
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\lv_font.c
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\lv_font.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\../lv_conf_internal.h
+lvgl_01\lv_font.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdint.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\../lv_conf_kconfig.h
+lvgl_01\lv_font.o: ../Mid/LVGL/LVGL_SRC/LVGL/examples/porting/../../lv_conf.h
+lvgl_01\lv_font.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stddef.h
+lvgl_01\lv_font.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\stdbool.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\lv_symbol_def.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\../misc/lv_area.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\../misc/lv_utils.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\../misc/lv_log.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\../misc/lv_types.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\../misc/lv_assert.h
+lvgl_01\lv_font.o: ..\Mid\LVGL\LVGL_SRC\LVGL\src\font\../misc/lv_mem.h
+lvgl_01\lv_font.o: D:\softinstall\keil\Core\ARM\ARMCC\Bin\..\include\string.h
