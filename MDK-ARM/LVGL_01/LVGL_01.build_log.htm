@@ -22,12 +22,19 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 D:\Users\Desktop\LVGL\LVGL_CODE\LVGL_03_LCD_TOUCH\MDK-ARM\LVGL_01.uvprojx
-Project File Date:  05/03/2026
+Project File Date:  05/04/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\softinstall\keil\Core\ARM\ARMCC\Bin'
 Build target 'LVGL_01'
-"LVGL_01\LVGL_01.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+../Core/Src/main.c(72): warning:  #177-D: function "btn_event_handler"  was declared but never referenced
+  static void btn_event_handler(lv_event_t * e){
+../Core/Src/main.c: 1 warning, 0 errors
+linking...
+Program Size: Code=227294 RO-data=104542 RW-data=668 ZI-data=60724  
+FromELF: creating hex file...
+"LVGL_01\LVGL_01.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
 

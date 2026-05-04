@@ -176,3 +176,5 @@ lvgl_01\main.o: ../Mid/LVGL/LVGL_SRC/LVGL/src/extra/widgets/imgbtn/lv_imgbtn.h
 lvgl_01\main.o: ../Mid/LVGL/LVGL_SRC/LVGL/src/extra/widgets/span/lv_span.h
 lvgl_01\main.o: ../Mid/LVGL/LVGL_SRC/LVGL/examples/porting/lv_port_disp.h
 lvgl_01\main.o: ../Mid/LVGL/LVGL_SRC/LVGL/examples/porting/lv_port_indev.h
+lvgl_01\main.o: ..\Mid\LVGL\APPS\gui_app\gui_guider.h
+lvgl_01\main.o: ..\Mid\LVGL\APPS\gui_app\events_init.h

@@ -34,6 +34,9 @@
 #include "lvgl.h"
 #include "lv_port_disp.h"
 #include "lv_port_indev.h"
+//gui guider
+#include "gui_guider.h"
+#include "events_init.h"
 
 /* USER CODE END Includes */
 
@@ -49,7 +52,7 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+lv_ui guider_ui;
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -120,19 +123,13 @@ int main(void)
   DWT_Init(); // 初始化DWT
   key_init(); 
 
-    lv_init();
-    lv_port_disp_init();
-    lv_port_indev_init();
+  lv_init();
+  lv_port_disp_init();
+  lv_port_indev_init();
 
-    lv_obj_t* btn_led2_obj = lv_btn_create(lv_scr_act());
-    
-    lv_obj_add_event_cb(btn_led2_obj, btn_event_handler, LV_EVENT_CLICKED, NULL);
-    lv_obj_set_size(btn_led2_obj,160,30);
-    lv_obj_align(btn_led2_obj,LV_ALIGN_CENTER,0,0);
-    
-    lv_obj_t *label_obj = lv_label_create(btn_led2_obj);
-    lv_label_set_text(label_obj,"Turn on Led2");
-    lv_obj_center(label_obj);
+  setup_ui(&guider_ui);
+  events_init(&guider_ui);
+
   
   /* USER CODE END 2 */
 
@@ -146,7 +143,7 @@ int main(void)
        
         lv_timer_handler(); 
         delay_ms(5);
-        Led2_Blink_NonBlocking(500);  // 每500ms翻转一次LED2
+        // Led2_Blink_NonBlocking(500);  // 每500ms翻转一次LED2
   }
   /* USER CODE END 3 */
 }

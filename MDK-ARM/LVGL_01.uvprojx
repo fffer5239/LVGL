@@ -81,7 +81,7 @@
           </BeforeMake>
           <AfterMake>
             <RunUserProg1>0</RunUserProg1>
-            <RunUserProg2>0</RunUserProg2>
+            <RunUserProg2>1</RunUserProg2>
             <UserProg1Name></UserProg1Name>
             <UserProg2Name></UserProg2Name>
             <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../BSP/TOUCH;../BSP/24CXX;../BSP/IIC;../BSP/KEY;../BSP/LCD/Inc;../BSP/LCD/Src;../Mid/LVGL/LVGL_SRC;../Mid/LVGL/LVGL_SRC/LVGL;../Mid/LVGL/LVGL_SRC/LVGL/src;../Mid/LVGL/LVGL_SRC/LVGL/examples/porting</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../BSP/TOUCH;../BSP/24CXX;../BSP/IIC;../BSP/KEY;../BSP/LCD/Inc;../BSP/LCD/Src;../Mid/LVGL/LVGL_SRC;../Mid/LVGL/LVGL_SRC/LVGL;../Mid/LVGL/LVGL_SRC/LVGL/src;../Mid/LVGL/LVGL_SRC/LVGL/examples/porting;..\Mid\LVGL\APPS\gui_app;..\Mid\LVGL\APPS\gui_app\custom;..\Mid\LVGL\APPS\gui_app\guider_customer_fonts;..\Mid\LVGL\APPS\gui_app\guider_fonts;..\Mid\LVGL\APPS\gui_app\images</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2189,6 +2189,91 @@
               <FileName>lv_textarea.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Mid\LVGL\LVGL_SRC\LVGL\src\widgets\lv_textarea.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Mid/lvgl/app/gui_demo</GroupName>
+          <Files>
+            <File>
+              <FileName>events_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\events_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>events_init.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\events_init.h</FilePath>
+            </File>
+            <File>
+              <FileName>gui_guider.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\gui_guider.c</FilePath>
+            </File>
+            <File>
+              <FileName>gui_guider.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\gui_guider.h</FilePath>
+            </File>
+            <File>
+              <FileName>setup_scr_screen.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\setup_scr_screen.c</FilePath>
+            </File>
+            <File>
+              <FileName>widgets_init.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\widgets_init.c</FilePath>
+            </File>
+            <File>
+              <FileName>widgets_init.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\widgets_init.h</FilePath>
+            </File>
+            <File>
+              <FileName>custom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\custom.c</FilePath>
+            </File>
+            <File>
+              <FileName>custom.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\custom.h</FilePath>
+            </File>
+            <File>
+              <FileName>lv_conf_ext.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\lv_conf_ext.h</FilePath>
+            </File>
+            <File>
+              <FileName>guider_customer_fonts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_customer_fonts\guider_customer_fonts.h</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_12.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_16.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_26.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_26.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_simsun_18.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_simsun_18.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_simsun_26.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_simsun_26.c</FilePath>
             </File>
           </Files>
         </Group>
