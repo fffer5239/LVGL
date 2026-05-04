@@ -75,4 +75,43 @@ void clock_count(int *hour, int *min, int *sec)
 }
 #endif
 
+void screen_calendar_1_draw_part_begin_event_cb(lv_event_t * e)
+{
+	lv_obj_t * obj = lv_event_get_target(e);
+	lv_obj_draw_part_dsc_t * dsc = lv_event_get_param(e);
+	if(dsc->part == LV_PART_ITEMS) {
+		if(dsc->id < 7) {
+			dsc->label_dsc->color = lv_color_hex(0x0D3055);
+			dsc->label_dsc->font = &lv_font_montserratMedium_12;
+		} else if (lv_btnmatrix_has_btn_ctrl(obj, dsc->id, LV_BTNMATRIX_CTRL_DISABLED)) {
+			dsc->label_dsc->color = lv_color_hex(0xA9A2A2);
+			dsc->label_dsc->font = &lv_font_montserratMedium_12;
+			dsc->rect_dsc->bg_opa = 0;
+		} else if(lv_btnmatrix_has_btn_ctrl(obj, dsc->id, LV_BTNMATRIX_CTRL_CUSTOM_1)) {
+			dsc->label_dsc->color = lv_color_hex(0x0D3055);
+			dsc->label_dsc->font = &lv_font_montserratMedium_12;
+			dsc->rect_dsc->bg_opa = 255;
+			dsc->rect_dsc->bg_color = lv_color_hex(0x01a2b1);
+			dsc->rect_dsc->border_opa = 255;
+			dsc->rect_dsc->border_width = 1;
+			dsc->rect_dsc->border_color = lv_color_hex(0xc0c0c0);
+		} else if(lv_btnmatrix_has_btn_ctrl(obj, dsc->id, LV_BTNMATRIX_CTRL_CUSTOM_2)) {
+			dsc->label_dsc->color = lv_color_hex(0x0D3055);
+			dsc->label_dsc->font = &lv_font_montserratMedium_12;
+			dsc->rect_dsc->bg_opa = 255;
+			dsc->rect_dsc->bg_color = lv_color_hex(0x2195f6);
+		} else {
+		}
+	}
+}
+  void screen_calendar_1_event_handler(lv_event_t * e)
+{
+  lv_calendar_date_t date;
+	lv_event_code_t code = lv_event_get_code(e);
+	if (code == LV_EVENT_VALUE_CHANGED) {
+		lv_obj_t * obj = lv_event_get_current_target(e);
+		lv_calendar_get_pressed_date(obj,&date);
+		lv_calendar_set_highlighted_dates(obj, &date, 1);
+	}
+}
 

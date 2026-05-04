@@ -23,6 +23,10 @@ void clock_count(int *hour, int *min, int *sec);
 #endif
 
 
+extern lv_calendar_date_t screen_calendar_1_today;
+extern lv_calendar_date_t screen_calendar_1_highlihted_days[1];
+void screen_calendar_1_event_handler(lv_event_t * e);
+void screen_calendar_1_draw_part_begin_event_cb(lv_event_t * e);
 
 #ifdef __cplusplus
 }

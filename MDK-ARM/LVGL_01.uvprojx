@@ -2196,6 +2196,46 @@
           <GroupName>Mid/lvgl/app/gui_demo</GroupName>
           <Files>
             <File>
+              <FileName>custom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\custom.c</FilePath>
+            </File>
+            <File>
+              <FileName>custom.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\custom.h</FilePath>
+            </File>
+            <File>
+              <FileName>lv_conf_ext.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\lv_conf_ext.h</FilePath>
+            </File>
+            <File>
+              <FileName>guider_customer_fonts.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_customer_fonts\guider_customer_fonts.h</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_12.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_12.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_16.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_16.c</FilePath>
+            </File>
+            <File>
+              <FileName>lv_font_montserratMedium_18.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_18.c</FilePath>
+            </File>
+            <File>
+              <FileName>_lc_alpha_115x27.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Mid\LVGL\APPS\gui_app\images\_lc_alpha_115x27.c</FilePath>
+            </File>
+            <File>
               <FileName>events_init.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Mid\LVGL\APPS\gui_app\events_init.c</FilePath>
@@ -2229,51 +2269,6 @@
               <FileName>widgets_init.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Mid\LVGL\APPS\gui_app\widgets_init.h</FilePath>
-            </File>
-            <File>
-              <FileName>custom.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\custom.c</FilePath>
-            </File>
-            <File>
-              <FileName>custom.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\custom.h</FilePath>
-            </File>
-            <File>
-              <FileName>lv_conf_ext.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\custom\lv_conf_ext.h</FilePath>
-            </File>
-            <File>
-              <FileName>guider_customer_fonts.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_customer_fonts\guider_customer_fonts.h</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_montserratMedium_12.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_12.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_montserratMedium_16.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_16.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_montserratMedium_26.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_26.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_simsun_18.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_simsun_18.c</FilePath>
-            </File>
-            <File>
-              <FileName>lv_font_simsun_26.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_simsun_26.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -12,30 +12,30 @@
 #include "lvgl.h"
 
 #include "gpio.h"
-static void screen_btn_led_2_event_handler (lv_event_t *e)
+static void screen_sw_1_event_handler (lv_event_t *e)
 {
 	lv_event_code_t code = lv_event_get_code(e);
 
 	switch (code) {
 	case LV_EVENT_CLICKED:
 	{
-		//btn_led_2 clicked,led2 toggle
-		HAL_GPIO_TogglePin(GPIOA, LED2_Pin);
+		//add the led3 control
+		HAL_GPIO_TogglePin(GPIOA, LED3_Pin);
 		break;
 	}
 	default:
 		break;
 	}
 }
-static void screen_btn_led_3_event_handler (lv_event_t *e)
+static void screen_sw_2_event_handler (lv_event_t *e)
 {
 	lv_event_code_t code = lv_event_get_code(e);
 
 	switch (code) {
 	case LV_EVENT_CLICKED:
 	{
-		//btn_led_3 clicked,led3 toggle
-		HAL_GPIO_TogglePin(GPIOA, LED3_Pin);
+		//add led2 control
+		HAL_GPIO_TogglePin(GPIOA, LED2_Pin);
 		break;
 	}
 	default:
@@ -44,8 +44,8 @@ static void screen_btn_led_3_event_handler (lv_event_t *e)
 }
 void events_init_screen(lv_ui *ui)
 {
-	lv_obj_add_event_cb(ui->screen_btn_led_2, screen_btn_led_2_event_handler, LV_EVENT_ALL, NULL);
-	lv_obj_add_event_cb(ui->screen_btn_led_3, screen_btn_led_3_event_handler, LV_EVENT_ALL, NULL);
+	lv_obj_add_event_cb(ui->screen_sw_1, screen_sw_1_event_handler, LV_EVENT_ALL, NULL);
+	lv_obj_add_event_cb(ui->screen_sw_2, screen_sw_2_event_handler, LV_EVENT_ALL, NULL);
 }
 
 void events_init(lv_ui *ui)

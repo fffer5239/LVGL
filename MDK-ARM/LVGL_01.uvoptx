@@ -3172,90 +3172,6 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\events_init.c</PathWithFileName>
-      <FilenameWithoutPath>events_init.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>238</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\events_init.h</PathWithFileName>
-      <FilenameWithoutPath>events_init.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>239</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\gui_guider.c</PathWithFileName>
-      <FilenameWithoutPath>gui_guider.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>240</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\gui_guider.h</PathWithFileName>
-      <FilenameWithoutPath>gui_guider.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>241</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\setup_scr_screen.c</PathWithFileName>
-      <FilenameWithoutPath>setup_scr_screen.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>242</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\widgets_init.c</PathWithFileName>
-      <FilenameWithoutPath>widgets_init.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>243</FileNumber>
-      <FileType>5</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\widgets_init.h</PathWithFileName>
-      <FilenameWithoutPath>widgets_init.h</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>244</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
       <PathWithFileName>..\Mid\LVGL\APPS\gui_app\custom\custom.c</PathWithFileName>
       <FilenameWithoutPath>custom.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
@@ -3263,7 +3179,7 @@
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
-      <FileNumber>245</FileNumber>
+      <FileNumber>238</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3275,7 +3191,7 @@
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
-      <FileNumber>246</FileNumber>
+      <FileNumber>239</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3287,7 +3203,7 @@
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
-      <FileNumber>247</FileNumber>
+      <FileNumber>240</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3299,7 +3215,7 @@
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
-      <FileNumber>248</FileNumber>
+      <FileNumber>241</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3311,7 +3227,7 @@
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
-      <FileNumber>249</FileNumber>
+      <FileNumber>242</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -3323,37 +3239,109 @@
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
+      <FileNumber>243</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_18.c</PathWithFileName>
+      <FilenameWithoutPath>lv_font_montserratMedium_18.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>15</GroupNumber>
+      <FileNumber>244</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\images\_lc_alpha_115x27.c</PathWithFileName>
+      <FilenameWithoutPath>_lc_alpha_115x27.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>15</GroupNumber>
+      <FileNumber>245</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\events_init.c</PathWithFileName>
+      <FilenameWithoutPath>events_init.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>15</GroupNumber>
+      <FileNumber>246</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\events_init.h</PathWithFileName>
+      <FilenameWithoutPath>events_init.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>15</GroupNumber>
+      <FileNumber>247</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\gui_guider.c</PathWithFileName>
+      <FilenameWithoutPath>gui_guider.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>15</GroupNumber>
+      <FileNumber>248</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\gui_guider.h</PathWithFileName>
+      <FilenameWithoutPath>gui_guider.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>15</GroupNumber>
+      <FileNumber>249</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\setup_scr_screen.c</PathWithFileName>
+      <FilenameWithoutPath>setup_scr_screen.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>15</GroupNumber>
       <FileNumber>250</FileNumber>
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_montserratMedium_26.c</PathWithFileName>
-      <FilenameWithoutPath>lv_font_montserratMedium_26.c</FilenameWithoutPath>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\widgets_init.c</PathWithFileName>
+      <FilenameWithoutPath>widgets_init.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>15</GroupNumber>
       <FileNumber>251</FileNumber>
-      <FileType>1</FileType>
+      <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_simsun_18.c</PathWithFileName>
-      <FilenameWithoutPath>lv_font_simsun_18.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>15</GroupNumber>
-      <FileNumber>252</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\guider_fonts\lv_font_simsun_26.c</PathWithFileName>
-      <FilenameWithoutPath>lv_font_simsun_26.c</FilenameWithoutPath>
+      <PathWithFileName>..\Mid\LVGL\APPS\gui_app\widgets_init.h</PathWithFileName>
+      <FilenameWithoutPath>widgets_init.h</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
